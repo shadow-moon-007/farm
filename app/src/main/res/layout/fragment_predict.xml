@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Predict">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter parameters"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/et_nitrogen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nitrogen"
+        android:inputType="number"
+        android:numeric="integer"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_potassium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Potassium"
+        app:layout_constraintEnd_toEndOf="@+id/et_nitrogen"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_nitrogen"
+        app:layout_constraintTop_toBottomOf="@+id/et_nitrogen" />
+
+    <EditText
+        android:id="@+id/et_phosphorus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Phosphorus"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_potassium"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_potassium"
+        app:layout_constraintTop_toBottomOf="@+id/et_potassium" />
+
+    <EditText
+        android:id="@+id/et_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Temperature"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_phosphorus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_phosphorus"
+        app:layout_constraintTop_toBottomOf="@+id/et_phosphorus" />
+
+    <EditText
+        android:id="@+id/et_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Humidity"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_temperature"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/et_temperature" />
+
+    <EditText
+        android:id="@+id/et_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="PH"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_humidity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_humidity"
+        app:layout_constraintTop_toBottomOf="@+id/et_humidity" />
+
+    <EditText
+        android:id="@+id/et_rainfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Rainfall"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_ph"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_ph"
+        app:layout_constraintTop_toBottomOf="@+id/et_ph" />
+
+    <Button
+        android:id="@+id/btn_predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Predict"
+        app:layout_constraintEnd_toEndOf="@+id/et_rainfall"
+        app:layout_constraintStart_toStartOf="@+id/et_rainfall"
+        app:layout_constraintTop_toBottomOf="@+id/et_rainfall" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

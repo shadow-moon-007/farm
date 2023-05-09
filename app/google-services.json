@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "110371621240",
+    "project_id": "farm-plus-plus",
+    "storage_bucket": "farm-plus-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110371621240:android:e460188cca8387530b608d",
+        "android_client_info": {
+          "package_name": "com.example.farm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110371621240-09o36oatgu63o7rin2ntjdagbc6te65d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farm",
+            "certificate_hash": "fac40bf63be3723b64e2c4518a0fb600c55805b3"
+          }
+        },
+        {
+          "client_id": "110371621240-c30sfar2prl2ami6m3mcdrpl4ipsnrqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjJd63z2HsNt29jnIal0z_DC4T-jK_JQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110371621240-3fdv1pfdcrh90r691bmk1hem8mgv9cu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
